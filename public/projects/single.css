@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #222322;
+}
+
+.heading-content {
+}
+
+.heading-content img {
+  border-radius: 25%;
+  float: left;
+  height: 300px;
+  width: 300px;
+  margin: 20px;
+}
+
+.heading-content-text {
+}
+
+.heading-content-text p {
+  color: DarkGray;
+  display: block;
+  font-family: "Courier New";
+  font-size: 30px;
+  padding: 5px;
+}
+
+.heading-content-text a {
+  color: DarkGray;
+  font-family: "Courier New";
+  font-size: 25px;
+}
+
+.project-description {
+  color: DarkGray;
+  font-family: "Courier New";
+  margin-top: 230px;
+  margin-left: 20px;
+}

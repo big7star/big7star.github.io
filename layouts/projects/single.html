@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/projects/single.css">
+    <title>{{ .Title }}</title>
+  </head>
+  <body>
+    <div class="heading-content">
+      <img src="{{ .Params.localThumbnailPath }}">
+    </div>
+    <div class="heading-content-text">
+      <p><strong>Project Name: </strong>{{ .Params.projectName }}</p>
+      <p><strong>Project Type: </strong>{{ .Params.projectType }}</p>
+      <a href="{{ .Params.projectLink }}">{{ .Params.projectLink }}</a>
+    </div>
+    <div class="project-description">
+      {{ .Content }}
+    </div>
+  </body>
+</html>

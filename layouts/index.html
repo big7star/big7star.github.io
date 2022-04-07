@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="home.css">
+    <title>{{ .Title }}</title>
+  </head>
+  <body>
+    <div class="center-block">
+      <h1>BEANSQUARED.NET</h1>
+      <img src="{{ .Params.currentAvatarPath }}">
+      <h2>MINECRAFT MODPACK DEV</h2>
+      <h2>AMATEUR WEB DEV & DESIGNER</h2>
+      <p>Welcome to my dark and dingy corner of the internet. Here you'll find links to some of my various projects that I work on in my spare time. Knock yourself out.</p>
+    </div>
+    <h1 id="project-list-header">./beansquared/projects</h1>
+    <div class="project-list">
+      {{ range where site.RegularPages "Type" "projects" }}
+        <a href="{{ .RelPermalink }}">
+          <img src="{{ .Params.thumbnailPath }}">
+          <h1>{{ .Params.projectName }}</h1>
+          <h2>{{ .Params.projectType }}</h2>
+        </a>
+      {{ end }}
+    </div>
+  </body>
+</html>

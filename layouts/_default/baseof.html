@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{{ block "stylesheets" . }}
+		{{ end }}
+		<link rel="stylesheet" href="{{ .Site.BaseURL }}css/header.css">
+		<link rel="stylesheet" href="{{ .Site.BaseURL }}css/footer.css">
+		<title>{{ .Title }} - beansquared.net</title>
+	</head>
+	<body>
+		{{ block "header" . }}
+		{{ end }}
+		{{ block "main" . }}
+		{{ end }}
+		{{ block "footer" . }}
+		{{ end }}
+	</body>
+</html>

@@ -1,48 +1,21 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="home.css">
-    <title>{{ .Title }}</title>
-  </head>
-  <body>
-    <div class="page-content">
-      <div class="nav-bar">
-        <div class="nav-options">
-          <a href=""><h1>beansquared.net</h1></a>
-          <a href="/projects"><h1>projects</h1></a>
-          <a href="/about"><h1>about</h1></a>
-          <a href="/contact"><h1>contact</h1></a>
-          <a href="https://youtu.be/dQw4w9WgXcQ"><h1>extra</h1></a>
-        </div>
-        <div class="nav-socials">
-          <a href="{{ .Params.social_links.github }}"><img src="social_link_github.png" alt="The GitHub logo, links to my GitHub profile"></a>
-          <a href="{{ .Params.social_links.youtube }}"><img src="social_link_youtube.png" alt="The YouTube logo, links to my YouTube channel"></a>
-          <a href="{{ .Params.social_links.discord }}"><img src="social_link_discord.png" alt="The Discord logo, links to an invite to my Discord server"></a>
-          <a href="{{ .Params.social_links.twitter }}"><img src="social_link_twitter.png" alt="The Twitter logo, links to my Twitter profile"></a>
-          <a href="{{ .Params.social_links.reddit }}"><img src="social_link_reddit.png" alt="The Reddit logo, links to my Reddit profile"></a>
-          <a href="{{ .Params.social_links.twitch }}"><img src="social_link_twitch.png" alt="The Twitch logo, links to my Twitch channel"></a>
-        </div>
-      </div>
-      <div class="welcome-desc">
-        <img src="avatar.jpg" alt="The band Disturbed's mascot, the Guy">
-        <p>Welcome to my dark and dingy corner of the internet. Here you'll find links to some of my various projects that I work on in my spare time. Knock yourself out.</p>
-      </div>
-      <div class="featured-projects">
-        <h1>featured projects</h1>
-        <div class="featured-projects-boxes">
-          <div class="featured-project-1">
-            <img src="{{ .Params.featured_projects.project_1.image }}" alt="">
-            <h2>{{ .Params.featured_projects.project_1.title }}</h2>
-            <p>{{ .Params.featured_projects.project_1.description }}</p>
-          </div>
-          <div class="featured-project-2">
-            <img src="{{ .Params.featured_projects.project_2.image }}" alt="">
-            <h2>{{ .Params.featured_projects.project_2.title }}</h2>
-            <p>{{ .Params.featured_projects.project_2.description }}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
+{{ define "stylesheets"}}
+	<link rel="stylesheet" href="css/index.css">
+{{ end }}
+{{ define "main" }}
+	<div class="main">
+		<h1>Hello there, I'm beansquared</h1>
+		<p>
+			Welcome to my dark and dingy corner of the internet.<br><br>
+			Here you will find information on various projects that I'm currently working on or have worked on in the past. 
+			Some notable ones include <a href="projects/mechaniccraft">MechanicCraft</a>, a minecraft modpack with a 
+			narrative-driven progression and <a href="projects/gunther">Gunther</a>, a custom built discord bot with a unique personality.
+		</p>
+		<div class="socials">
+			<a href="https://discord.gg/zGAvPU3"><img src="images/discord.png" alt="The Discord logo"></a>
+			<a href="https://github.com/beans-squared"><img src="images/github.png" alt="The GitHub logo"></a>
+			<a href="https://www.youtube.com/channel/UCPtxc1V4PYIvfwjIYBD_SBQ"><img src="images/youtube.png" alt="The YouTube logo"></a>
+			<a href="https://twitter.com/beansquared_1"><img src="images/twitter.png" alt="The Twitter logo"></a>
+		</div>
+		<img id="avatar" src="images/guy.jpg" alt="The face of The Guy, the band Disturbed's mascot">
+	</div>
+{{ end }}

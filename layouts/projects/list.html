@@ -1,15 +1,20 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="/projects/list.css">
-    <title>{{ .Title }}</title>
-  </head>
-  <body>
-    <div class="page-text">
-      <p>You are not supposed to be here.</p>
-      <p>Go away.</p>
-      <p>Or I'll steal the aglets from your shoelaces and sell them to your neightbor's pet goldfish.</p>
-    </div>
-  </body>
-</html>
+{{ define "stylesheets" }}
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/projects/list.css">
+{{ end }}
+{{ define "main" }}
+	<div class="main">
+		<h1>All Projects</h1>
+		<div class="project-list-container">
+			{{ range .Pages }}
+				<div class="project-item">
+					<a href="{{ .Permalink }}">
+						<img src="{{ .Site.BaseURL }}images/projects/{{ .Params.projectIcon }}" alt="{{ .Params.projectAltText }}">
+						<h1>{{ .Params.projectTitle }}</h1>
+						<h2>{{ .Params.projectType }}</h2>
+						<p>{{ .Params.projectDescription }}</p>
+					</a>
+				</div>
+			{{ end }}
+		</div>
+	</div>
+{{ end }}

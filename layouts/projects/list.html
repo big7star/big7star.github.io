@@ -8,10 +8,10 @@
 			{{ range .Pages }}
 				<div class="project-item">
 					<a href="{{ .Permalink }}">
-						<img src="{{ .Site.BaseURL }}images/projects/{{ .Params.projectIcon }}" alt="{{ .Params.projectAltText }}">
-						<h1>{{ .Params.projectTitle }}</h1>
-						<h2>{{ .Params.projectType }}</h2>
-						<p>{{ .Params.projectDescription }}</p>
+						<img src="{{ .Site.BaseURL }}images/projects/{{ .Params.icon }}" alt="{{ .Params.iconalttext }}">
+						<h1>{{ .Title }}</h1>
+						<h2>{{ .Type }}</h2>
+						<p>{{ .Description }}</p>
 					</a>
 				</div>
 			{{ end }}

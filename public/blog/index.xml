@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on beansquared.net</title>
+    <link>https://beans-squared.github.io/blog/</link>
+    <description>Recent content in Blog on beansquared.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 21 Apr 2022 16:02:25 -0500</lastBuildDate><atom:link href="https://beans-squared.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Welcome to My Blog</title>
+      <link>https://beans-squared.github.io/blog/welcome-to-my-blog/</link>
+      <pubDate>Thu, 21 Apr 2022 16:02:25 -0500</pubDate>
+      
+      <guid>https://beans-squared.github.io/blog/welcome-to-my-blog/</guid>
+      <description>The first post I&amp;rsquo;ve made on this blog. Click any part of the image, title, etc to open the post and read the full article.</description>
+    </item>
+    
+  </channel>
+</rss>

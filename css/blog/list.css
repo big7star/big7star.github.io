@@ -1,0 +1,73 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: 'Comfortaa';
+	src: url('{{ .Site.BaseURL }}fonts/Comfortaa-VariableFont_wght.ttf') format('truetype');
+}
+
+body {
+	background: #272727;
+}
+
+.main {
+	margin: 0 200px;
+}
+
+.main h1, .main h2, .main p {
+	font-family: 'Comfortaa', cursive;
+	margin: 30px 0;
+}
+
+.main h1 {
+	color: #f1c232;
+	font-size: 40px;
+}
+
+.recent-posts-container {
+	display: flex;
+}
+
+.post-item {
+	background: #181818ff;
+	border-radius: 30px;
+	margin-right: 20px;
+	min-height: 500px;
+	width: 500px;
+}
+
+.post-item:hover {
+	opacity: 80%;
+}
+
+.post-item a {
+	text-decoration: none;
+}
+
+.post-item img {
+	border-radius: 30px;
+	float: left;
+	padding: 10px;
+	width: 480px;
+}
+
+.post-item h1 {
+	font-size: 25px;
+	margin-left: 10px;
+}
+
+.post-item h2 {
+	color: #b7b7b7;
+	font-size: 12px;
+	margin-top: -25px;
+	margin-left: 10px;
+}
+
+.post-item p {
+	color: #b7b7b7;
+	font-size: 15px;
+	line-height: 1.5;
+	margin-left: 10px;
+}

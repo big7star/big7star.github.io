@@ -1,0 +1,76 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: 'Comfortaa';
+	src: url('/fonts/Comfortaa-VariableFont_wght.ttf') format('truetype');
+}
+
+body {
+	background: #272727;
+}
+
+.main {
+	height: 650px;
+}
+
+.main a {
+	color: #f1c232;
+	text-decoration: none;
+}
+
+.main a:hover {
+	color: #bf9000;
+}
+
+.main h1, p {
+	font-family: 'Comfortaa', cursive;
+}
+
+.main h1 {
+	color: #f1c232;
+	font-size: 55px;
+	margin-top: 50px;
+	margin-left: 200px;
+	width: 530px;
+}
+
+.main p {
+	color: #b7b7b7;
+	font-size: 16px;
+	line-height: 1.6;
+	position: relative;
+	left: 200px;
+	margin-top: 50px;
+	width: 450px;
+}
+
+.main .socials {
+	position: absolute;
+	left: 200px;
+	margin-top: 50px;
+	text-align: center;
+	width: 450px;
+}
+
+.main .socials img {
+	margin: 10px;
+	padding: 5px;
+	height: 60px;
+	width: 60px;
+}
+
+.main .socials img:hover {
+	opacity: 50%;
+}
+
+.main #avatar {
+	border-radius: 30px;
+	position: absolute;
+	top: 150px;
+	right: 200px;
+	height: 600px;
+	width: 600px;
+}

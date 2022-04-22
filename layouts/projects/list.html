@@ -8,7 +8,7 @@
 			{{ range .Pages }}
 				<div class="project-item">
 					<a href="{{ .Permalink }}">
-						<img src="{{ .Site.BaseURL }}images/projects/{{ .Params.icon }}" alt="{{ .Params.iconalttext }}">
+						<img src="{{ .Site.BaseURL }}/images/projects/{{ .Params.icon }}" alt="{{ .Params.iconalttext }}">
 						<h1>{{ .Title }}</h1>
 						<h2>{{ .Params.projecttype }}</h2>
 						<p>{{ .Description }}</p>

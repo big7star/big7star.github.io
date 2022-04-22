@@ -1,6 +1,11 @@
-{{ define "stylesheets"}}
-	<link rel="stylesheet" href="{{ .Site.BaseURL}}css/projects/single.html">
+{{ define "stylesheets" }}
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/projects/single.css">
 {{ end }}
 {{ define "main" }}
-	Single project template
+	<div class="main">
+		<p>
+			Hello, I'm still figuring how to make this page not look like ass. In the meantime, there's an 
+			<a href="{{ .Params.externallink1 }}">external link to the project</a> (if there is one).
+		</p>
+	</div>
 {{ end }}

@@ -1,0 +1,59 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: 'Comfortaa';
+	src: url('/fonts/Comfortaa-VariableFont_wght.ttf') format('truetype');
+}
+
+body {
+	background: #272727;
+}
+
+.main {
+	margin: 0 200px;
+}
+
+.main h1, .main h2, .main h3, .main p {
+	font-family: 'Comfortaa', cursive;
+}
+
+.main h1, .main h2, .main h3 {
+	color: #f1c232;
+}
+
+.main a {
+	text-decoration: none;
+}
+
+.main a:hover {
+	color: #bf9000;
+	text-decoration: underline;
+}
+
+.main h1 {
+	font-size: 40px;
+	margin: 30px 0;
+}
+
+.main h2 {
+	margin: 10px 0;
+}
+
+.main h3 {
+	border: 2px solid #f1c232;
+	border-radius: 20px;
+	display: inline-block;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	padding: 15px;
+}
+
+.main p {
+	color: #b7b7b7;
+	margin: 10px 0;
+	line-height: 1.5;
+}

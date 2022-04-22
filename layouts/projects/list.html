@@ -10,7 +10,7 @@
 					<a href="{{ .Permalink }}">
 						<img src="{{ .Site.BaseURL }}images/projects/{{ .Params.icon }}" alt="{{ .Params.iconalttext }}">
 						<h1>{{ .Title }}</h1>
-						<h2>{{ .Type }}</h2>
+						<h2>{{ .Params.projecttype }}</h2>
 						<p>{{ .Description }}</p>
 					</a>
 				</div>

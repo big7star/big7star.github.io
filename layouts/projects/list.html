@@ -3,17 +3,21 @@
 {{ end }}
 {{ define "main" }}
 	<div class="main">
-		<h1>All Projects</h1>
+		<h1 id="project-list-title">All Projects</h1>
 		<div class="project-list-container">
 			{{ range .Pages }}
-				<div class="project-item">
-					<a href="{{ .Permalink }}">
-						<img src="{{ .Site.BaseURL }}/images/projects/{{ .Params.icon }}" alt="{{ .Params.iconalttext }}">
-						<h1>{{ .Title }}</h1>
-						<h2>{{ .Params.projecttype }}</h2>
-						<p>{{ .Description }}</p>
-					</a>
-				</div>
+				<a href="{{ .Permalink }}">
+					<div class="project-item">
+						<div class="project-thumbnail">
+							<img src="{{ .Site.BaseURL }}/images/projects/{{ .Params.icon }}" alt="{{ .Params.iconalttext }}">
+						</div>
+						<div class="project-metadata">
+							<h1>{{ .Title }}</h1>
+							<h2>{{ .Params.projecttype }}</h2>
+							<p>{{ .Description }}</p>
+						</div>
+					</div>
+				</a>	
 			{{ end }}
 		</div>
 	</div>

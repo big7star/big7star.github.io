@@ -13,7 +13,7 @@ body {
 }
 
 .main {
-	height: 650px;
+	margin: 0 200px;
 }
 
 .main a {
@@ -27,32 +27,28 @@ body {
 
 .main h1, p {
 	font-family: 'Comfortaa', cursive;
+	width: 100%;
 }
 
 .main h1 {
 	color: #f1c232;
 	font-size: 55px;
+	text-align: center;
 	margin-top: 50px;
-	margin-left: 200px;
-	width: 530px;
+	width: 100%;
 }
 
 .main p {
 	color: #b7b7b7;
 	font-size: 16px;
+	text-align: center;
 	line-height: 1.6;
-	position: relative;
-	left: 200px;
 	margin-top: 50px;
-	width: 450px;
 }
 
 .main .socials {
-	position: absolute;
-	left: 200px;
 	margin-top: 50px;
 	text-align: center;
-	width: 450px;
 }
 
 .main .socials img {
@@ -64,13 +60,4 @@ body {
 
 .main .socials img:hover {
 	opacity: 50%;
-}
-
-.main #avatar {
-	border-radius: 30px;
-	position: absolute;
-	top: 150px;
-	right: 200px;
-	height: 600px;
-	width: 600px;
 }

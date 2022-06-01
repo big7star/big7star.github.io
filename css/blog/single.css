@@ -16,7 +16,11 @@ body {
 	margin: 0 500px;
 }
 
-.main h1, .main h2, .main p {
+.main img {
+	width: 100%;
+}
+
+.main h1, .main h2, .main p, .main li {
 	font-family: 'Comfortaa', cursive;
 }
 
@@ -35,6 +39,7 @@ body {
 .main p {
 	color: #b7b7b7;
 	font-size: 15px;
+	text-align: justify;
 	margin-top: 20px;
 	line-height: 1.4;
 }
@@ -46,4 +51,20 @@ body {
 
 .main a:hover {
 	color: #bf9000;
+}
+
+.main blockquote {
+	background: #181818ff;
+	border-left: 4px solid white;
+	padding: 20px;
+}
+
+.main ol {
+	padding-left: 10px;
+}
+
+.main li {
+	color: #b7b7b7;
+	font-size: 15px;
+	line-height: 1.4;
 }

@@ -1,1 +1,1 @@
-beansquared
+https://www.beansquared.net/

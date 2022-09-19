@@ -1,3 +1,5 @@
-baseURL = 'https://beans-squared.github.io'
+baseURL = 'shanemcmonigal.com'
 languageCode = 'en-us'
-title = 'beansquared.net'
+title = 'shanemcmonigal.com'
+[params]
+    github = 'https://github.com/big7star'

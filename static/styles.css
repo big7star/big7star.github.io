@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'VT323';
+    src: url("/VT323-Regular.ttf") format("truetype");
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+header a {
+    border: 2px solid rgba(0, 0, 0, 0);
+    text-decoration: none;
+    padding: 5px;
+    margin: 15px;
+    color: white;
+    font-family: VT323, monospace;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+#nav-home {
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+#nav-project {
+    animation-duration: 1.3s;
+    animation-name: slidein;
+}
+
+#nav-blog {
+    animation-duration: 1.6s;
+    animation-name: slidein;
+}
+
+#nav-contact {
+    animation-duration: 1.9s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-top: -100%;
+        width: 300%
+    }
+    to {
+        margin-top: 15px;
+        width: 100%;
+    }
+}
+
+header a:hover {
+    border: 2px solid white;
+}
+
+main {
+}
+
+main video {
+    width: 100%;
+    min-width: 700px;
+}
+
+footer {
+    font-family: VT323, monospace;
+    font-size: 1em;
+    text-align: center;
+    vertical-align: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    min-width: 100%;
+}
+
+footer span {
+    color: white;
+    padding: 10px;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: darkgray;
+}

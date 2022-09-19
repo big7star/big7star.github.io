@@ -1,21 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 	<head>
-		{{ block "stylesheets" . }}
-		{{ end }}
-		<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/header.css">
-		<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/footer.css">
-		<title>{{ .Title }} - beansquared.net</title>
-		<link rel="icon" type="image/x-icon" href="{{ .Site.BaseURL }}/images/favicon.ico">
+		<meta charset="UTF-8">
+		<title>{{ .Title }} | {{ .Site.Title }}</title>
+		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
-		{{ block "header" . }}
-		{{ end }}
-		{{ block "main" . }}
-		{{ end }}
-		{{ block "footer" . }}
-		{{ end }}
-		<!-- 100% privacy friendly analytics -->
+		<header>
+			<div>
+				<a href="/" id="nav-home"><p>Home</p></a>
+				<a href="/#projects" id="nav-project"><p>Projects</p></a>
+				<a href="/#blog" id="nav-blog"><p>Blog</p></a>
+				<a href="/#contact" id="nav-contact"><p>Contact</p></a>
+			</div>
+		</header>
+		<main>
+			{{ block "main" . }}
+			{{ end }}
+		</main>
+		<footer>
+			<span>2022 &copy; <a href="{{ .Site.Params.github }}">Shane McMonigal</a>. All Rights Reserved.</span>
+		</footer>
+		<!-- 100% privacy-friendly analytics -->
 		<script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 		<noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
 	</body>

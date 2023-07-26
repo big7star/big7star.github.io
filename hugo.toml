@@ -1,0 +1,4 @@
+baseURL = 'https://smcmo.dev/'
+languageCode = 'en-us'
+title = 'Shane McMonigal'
+copyright = '2023 Shane McMonigal'

@@ -1,11 +1,11 @@
 ---
-title: "Welcome to My Blog"
+title: Welcome to My Blog
+summary: The first post I've made on this blog. Click any part of the image, title, etc to open the post and read the full article.
 draft: false
-publishdate: 2022-04-21T16:02:25-05:00
-summary: "The first post I've made on this blog. Click any part of the image, title, etc to open the post and read the full article."
-image: "laptop-graphic.svg"
-imagealttext: "Some vector art of a laptop and some desk supplies"
 ---
+
+![](../laptop-graphic.svg)
+
 Hello, my name is beansquared and this is my blog.
 
 I've never run my own blog before and I'm honestly still not really sure if I really want to. So consider this blog experimental, I really only intend on posting to here if I'm feeling like it.

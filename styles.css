@@ -1,0 +1,170 @@
+@font-face {
+	font-family: 'Raleway';
+	src: url('./fonts/Raleway-VariableFont_wght.ttf');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	--color-main: #36a6f6;
+	--color-bg: #262626;
+	--color-text: #ffffff;
+
+	--font-weight-normal: 400;
+	--font-weight-bold: 700;
+
+	position: relative;
+	width: 100vw;
+	min-height: 100vh;
+}
+
+body {
+	color: var(--color-text);
+	background-color: var(--color-bg);
+
+	font-family: 'Raleway';
+	font-size: 16px;
+}
+
+a {
+	color: var(--color-main);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+header {
+	display: flex;
+	align-items: center;
+}
+
+header > a > h1 {
+	color: var(--color-main);
+	font-weight: var(--font-weight-normal);
+	padding: 2rem;
+}
+
+header > a:hover {
+	text-decoration: none;
+}
+
+@media (max-width: 600px) {
+	header {
+		justify-content: center;
+	}
+
+	header > h1 {
+		display: none;
+	}
+}
+
+header > nav {
+	display: flex;
+	gap: 2rem;
+	padding: 2rem;
+}
+
+header > * {
+	text-shadow: 0 6px 4px rgba(0, 0, 0, 0.25);
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	gap: 5rem;
+	width: 60vw;
+	max-width: 90vw;
+	margin: 0 auto;
+}
+
+.resume-section {
+	padding: 1rem;
+}
+
+.resume-section > h1 {
+	color: var(--color-main);
+}
+
+.resume-left-column .resume-section ul {
+	list-style-type: none;
+	margin-left: 1rem;
+}
+
+.resume-left-column .resume-section ul > li {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.25rem;
+}
+
+.resume-right-column .resume-section ul.section-item {
+	list-style-type: none;
+	margin-left: 1rem;
+}
+
+.resume-right-column .resume-section ul.section-item > li {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	margin-top: 2rem;
+}
+
+.resume-right-column .resume-section ul.section-item > li > span {
+	display: flex;
+	justify-content: space-between;
+}
+
+.resume-right-column .resume-section ul.section-item > li > span.technologies {
+	display: flex;
+	justify-content: start;
+	gap: 0.5rem;
+}
+
+.resume-right-column .resume-section ul {
+	margin-left: 1rem;
+}
+
+.resume-right-column
+	.resume-section
+	ul.section-item
+	> li
+	> span.technologies
+	> p {
+	border: 2px solid var(--color-main);
+	border-radius: 0.5rem;
+	padding: 0.25rem;
+}
+
+#homepage-text {
+	width: 900px;
+	max-width: 90vw;
+}
+
+#homepage-text > h1 {
+	color: var(--color-main);
+	font-size: 4rem;
+	margin: 4rem 0;
+}
+
+#homepage-text > h2 {
+	margin: 4rem 0;
+}
+
+#homepage-text p {
+	margin: 2rem 0;
+	line-height: 1.5rem;
+}
+
+#homepage-text a {
+	color: var(--color-main);
+}
+
+#homepage-projects > ul li {
+	margin-left: 1rem;
+	padding: 0.25rem;
+}
